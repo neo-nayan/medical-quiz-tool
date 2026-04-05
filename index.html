@@ -10,26 +10,30 @@
     <div class="container">
         <header>
             <h1>🏥 Medical Quiz Tool</h1>
-            <p class="subtitle">Convert Medical Questions into Interactive Quizzes</p>
+            <p class="subtitle">Convert Questions to Interactive Quizzes</p>
         </header>
 
         <div class="main-content">
             <div class="input-section">
                 <h2>📝 Paste Your Question</h2>
-                <textarea id="questionInput" rows="10" placeholder="Paste your medical question in the standard format (Question #, Case, Options A-D, Correct Answer, Explanation, Distractor Analysis)..."></textarea>
-                <p class="help-text">💡 Format: Question [#] | Case Description | Question Text | Options (A-D) | Correct Answer | Explanation | Distractor Analysis</p>
-                <button class="btn-primary" onclick="loadQuestion()">Load Question</button>
-                <button class="btn-secondary" onclick="clearAll()">Clear All</button>
+                <textarea 
+                    id="questionInput" 
+                    placeholder="Paste your medical question here..."
+                    rows="10"
+                ></textarea>
+                <p class="help-text">Supported format: Question number, case description, question text, options A-D, correct answer with explanation, distractor analysis</p>
+                <button class="btn-primary" onclick="loadQuestion()">📥 Load Question</button>
+                <button class="btn-secondary" onclick="clearAll()">🔄 Clear</button>
             </div>
 
             <div id="quizContainer"></div>
         </div>
 
         <footer>
-            <p>Medical Quiz Tool v1.0 | Created for interactive medical education</p>
+            <p>© 2026 Medical Quiz Tool | Smart Question Parser & Interactive Learning</p>
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"><\/script>
 </body>
 </html>
